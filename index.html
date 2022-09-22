@@ -12,13 +12,21 @@
        
     </head>
 
-    <body>
+    <body onload="buildBoard(8)" ></body>>
+     
         <h1>Mines: <span id="mines-count">0</span></h1>
         <h2>😃</h2>
         <h3>LIFE</h3>
         <div id="board"></div>
         <br>
         <button id="flag-button">🚩</button>
-        <button class="start-btn hide" onclick="startGame()">Restart</button>
+        <button class="start-btn hide" onclick="buildBoard()">Restart</button>
+        <div class="levels">
+            <select name="" onchange="buildBoard(value)">
+              <option value="4">Easy</option>
+              <option value="8">Hard</option>
+              <option value="16">Extreme!</option>
+            </select>
+          </div>
     </body>
 </html>

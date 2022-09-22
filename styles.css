@@ -3,6 +3,15 @@ body {
     text-align: center;
 }
 
+.levels {
+    background-color: burlywood;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 10px;
+
+}
+
 #board {
     width: 400px;
     height: 400px;
